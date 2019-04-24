@@ -8,6 +8,7 @@
 podemos variar la url pasando una variable desde inArguments y transformando country a su código */
 // parseamos el json por cada user que entra en el journey
 $json4 = file_get_contents('php://input');
+
 $object = json_decode($json4, true);
 $temps = $object['inArguments'][0]['message'];
 $token = $object['inArguments'][1]['message2'];
@@ -23,12 +24,16 @@ curl_setopt_array($curl, array(
 ));
 
 $response = curl_exec($curl);
+$falla = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 $err = curl_error($curl);
 curl_close($curl);
 
+if ($falla == 401) {
+  echo '{"temps":"null"}';
+}
 if ($err) {
   echo '{"temps":"null"}';
-} else {
+}else {
 
 	$tempsbarcelona = json_decode($response);
 	$accuweather_temps = $tempsbarcelona[0]->{'WeatherText'};
