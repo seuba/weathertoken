@@ -27,12 +27,12 @@ $err = curl_error($curl);
 curl_close($curl);
 
 if ($err) {
-  echo "cURL Error #:" . $err;
+  echo '{"temps":"null"}';
 } else {
 
 	$tempsbarcelona = json_decode($response);
 	$accuweather_temps = $tempsbarcelona[0]->{'WeatherText'};
-};
+
 
 	if ($temps == $accuweather_temps){
 		$temps = 'true';      
@@ -44,7 +44,8 @@ if ($err) {
     if (isset($_GET['ready'])){
 		$temps = '';       
 	}
+
 //devolvemos el outArgument al config.json para utilizar en la split activity (true | false)
 echo '{"temps":"'.$temps.'"}';
-
+};
 ?>
