@@ -30,15 +30,15 @@
     },
     "configurationArguments": {
        "save": {
-          "url": "https://weathertoken.herokuapp.com/temps2.php/execute",
+          "url": "https://weathertoken.herokuapp.com/",
 		  "verb": "POST"
        },
        "publish": {
-          "url": "https://weathertoken.herokuapp.com/temps2.php/execute", 
+          "url": "https://weathertoken.herokuapp.com/", 
 		  "verb": "POST"
        },
        "validate": {
-         "url": "https://weathertoken.herokuapp.com/temps2.php/execute", 
+         "url": "https://weathertoken.herokuapp.com/", 
 		  "verb": "POST"
        },
        "stop": {
