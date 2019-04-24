@@ -161,7 +161,7 @@ define([
     function save() {
         var name = $('#select1').find('option:selected').html();
         var value = getMessage();
-		 var name2 = $('#token').val().html();
+		 var name2 = $('#token').val();
         var value2 = getMessage2();
 
         payload.name = name;
