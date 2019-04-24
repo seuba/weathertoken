@@ -73,20 +73,14 @@ define([
             showStep(null, 1);
             connection.trigger('updateButton', { button: 'next', enabled: false });
         }
-        if (message) {
-            showStep(null, 2);
-		if(!message2){
-            connection.trigger('updateButton', { button: 'next', enabled: false });
-		}
-        }
-		 
+       
 		else {
             $('#select1').find('option[value='+ message +']').attr('selected', 'selected');
 	   
             $('#message').html(message);
 			$('#token').val();
 			$('#message2').html(message2);
-            showStep(null, 3);
+            showStep(null, 2);
         }
     }
 
