@@ -7,7 +7,7 @@ define([
 
     var connection = new Postmonger.Session();
     var payload = {};
-    var lastStepEnabled = false;
+   
     var steps = [ 
         { "label": "Step 1", "key": "step1" },
 		{ "label": "Step 2", "key": "step2" },
@@ -73,10 +73,7 @@ define([
             showStep(null, 1);
             connection.trigger('updateButton', { button: 'next', enabled: false });
         }
-		 if (!message2) {
-            showStep(null, 2);
-            connection.trigger('updateButton', { button: 'next', enabled: false });
-        }
+		 
 		else {
             $('#select1').find('option[value='+ message +']').attr('selected', 'selected');
             $('#message').html(message);
