@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Decision Weather",
+           "name": "Weather",
            "description": "Control the weather like a master"
        }
     },
