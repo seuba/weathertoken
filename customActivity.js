@@ -33,13 +33,13 @@ define([
             var message = getMessage();
             connection.trigger('updateButton', { button: 'next', enabled: Boolean(message) });
 
-            $('#message').html(message);
+            
         });
 	     $('#tokenbutton').click(function() {
             var message2 = getMessage2();
             connection.trigger('updateButton', { button: 'next', enabled: Boolean(message) });
 
-            $('#message2').html(message2);
+           
         });
 	}
 	function initialize (data) {
