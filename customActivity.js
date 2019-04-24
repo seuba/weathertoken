@@ -127,8 +127,8 @@ define([
             case 'step1':
                 $('#step1').show();
                 connection.trigger('updateButton', {
-                    button: 'next',
-                    enabled: Boolean(getMessage())
+                    button: 'next'
+                   
                 });
                 connection.trigger('updateButton', {
                     button: 'back',
@@ -144,8 +144,8 @@ define([
                 connection.trigger('updateButton', {
                     button: 'next',
                     text: 'next',
-                    visible: true,
-					 enabled: Boolean(getMessage2())
+                    visible: true
+					
                 });
 			 case 'step3':
                 $('#step3').show();
