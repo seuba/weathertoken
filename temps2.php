@@ -46,6 +46,5 @@ if ($err) {
 	}
 //devolvemos el outArgument al config.json para utilizar en la split activity (true | false)
 echo '{"temps":"'.$temps.'"}';
-echo $accuweather_temps;
-echo $object['inArguments'][0]['message'];
+
 ?>
