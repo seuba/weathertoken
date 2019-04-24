@@ -73,9 +73,11 @@ define([
             showStep(null, 1);
             connection.trigger('updateButton', { button: 'next', enabled: false });
         }
-        if (message && (!message2)) {
+        if (message) {
             showStep(null, 2);
+		if(!message2){
             connection.trigger('updateButton', { button: 'next', enabled: false });
+		}
         }
 		 
 		else {
