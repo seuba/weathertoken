@@ -33,13 +33,13 @@ define([
             var message = getMessage();
             connection.trigger('updateButton', { button: 'next', enabled: Boolean(message) });
 
-            
+              $('#message').html(message);
         });
 	     $('#tokenbutton').click(function() {
             var message2 = getMessage2();
             connection.trigger('updateButton', { button: 'next', enabled: Boolean(message) });
 
-           
+             $('#message2').html(message2);
         });
 	}
 	function initialize (data) {
@@ -68,6 +68,10 @@ define([
                 }
             });
         });
+	  if (!message2) {
+            showStep(null, 2);
+            connection.trigger('updateButton', { button: 'next', enabled: false });
+        }
 
         if (!message) {
             showStep(null, 1);
@@ -80,7 +84,7 @@ define([
             $('#message').html(message);
 			$('#token').val();
 			$('#message2').html(message2);
-            showStep(null, 2);
+            showStep(null, 3);
         }
     }
 
