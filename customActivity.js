@@ -73,7 +73,7 @@ define([
             showStep(null, 1);
             connection.trigger('updateButton', { button: 'next', enabled: false });
         }
-        if (message && !message2) {
+        if (message && (!message2)) {
             showStep(null, 2);
             connection.trigger('updateButton', { button: 'next', enabled: false });
         }
@@ -153,12 +153,11 @@ define([
                     button: 'back',
                     visible: true
                 });
-                connection.trigger('updateButton', {
-                    button: 'next',
-                    text: 'next',
-                    visible: false
-					 
-                });
+               connection.trigger('updateButton', {
+                        button: 'next',
+                        text: 'done',
+                        visible: true
+                    });
                 break;
         }
     }
