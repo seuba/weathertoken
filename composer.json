@@ -1,7 +1,7 @@
 
 {
 "name":"weathertoken/weathertoken",
-"description":"adeu"},
+"description":"adeu",
 "require":{
  "twilio/sdk":"5.32" 
 }
