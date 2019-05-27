@@ -23,26 +23,5 @@ $message = $twilio->messages
                            )
                   ); 
  
-$status = $message->status;
-$sid = $message->sid;
-$from = $message->from;
-$from = str_replace("whatsapp:+","",$from);
-$to = $message->to;
-$to = str_replace("whatsapp:+","",$to);
-$direction = 'outbound';
-$mensaje = $message->body;
-$mensaje =  rawurlencode($mensaje);
-$ur = 'https://pub.s10.exacttarget.com/0qrbgkddaqj?MessageId='.$sid.'&Phone='.$from.'&Message='.$mensaje.'&From='.$from.'&To='.$to.'&Direction='.$direction.'&Date=none&Status='.$status.'&keyword='.$keyword;
 
-$ch = curl_init($ur);
-$http_headers = array(
-'User-Agent: Junk', // Any User-Agent will do here
-);
-curl_setopt($ch, CURLOPT_HEADER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $http_headers);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($ch);
-curl_close($ch);
-
-return response( ['status' => $status]);
 ?>
