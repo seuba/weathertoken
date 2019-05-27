@@ -1,6 +1,6 @@
 <?php
 
-require  ('/vendor/autoload.php';
+require  ('../app/vendor/autoload.php';
 
 // Use the REST API Client to make requests to the Twilio REST API
 use Twilio\Rest\Client;
