@@ -11,7 +11,7 @@ l>
 					'blocksdk',
 					'codi'
 				];
-				require(config, BlockSDK);
+				require(baseUrl, BlockSDK);
 			})();
 		</script>
 
