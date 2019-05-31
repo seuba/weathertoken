@@ -1,7 +1,7 @@
 <html>
   <head></head>
   <body>
-    <script src="/blocksdk.js"></script>
+    <script src="blocksdk.js"></script>
 	<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 <script>
 var BlockSDK = require('blocksdk');
