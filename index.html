@@ -1,4 +1,4 @@
-<html>
+l>
   <head></head>
   <body>
     <script src="https://albertseuba.herokuapp.com/blocksdk.js"></script>
@@ -6,11 +6,10 @@
 	<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 	  <script type="text/javascript">
 			(function() {
-				var config = [
-					'codi'
-				];
+				 baseUrl: "",
 				var BlockSDK = [
-					'blocksdk'
+					'blocksdk',
+					'codi'
 				];
 				require(config, BlockSDK);
 			})();
