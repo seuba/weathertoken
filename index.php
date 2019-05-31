@@ -10,7 +10,7 @@
 					baseUrl: ''
 				};
 				var albert = [
-					'blocksdk',
+					
 					'codi'
 				];
 				require(config, albert);
