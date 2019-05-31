@@ -6,13 +6,13 @@
 	<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 	  <script type="text/javascript">
 			(function() {
-				var config = {
+				var config = [
 					'codi'
-				};
+				];
 				var BlockSDK = [
 					'blocksdk'
 				];
-				require(BlockSDK);
+				require(config, BlockSDK);
 			})();
 		</script>
 
