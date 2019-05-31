@@ -2,6 +2,7 @@
   <head></head>
   <body>
     <script src="/app/blocksdk.js"></script>
+	<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 <script>
 var BlockSDK = require('blocksdk');
 if (window.self === window.top) {
