@@ -4,7 +4,7 @@
     <script src="blocksdk.js"></script>
 	<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 <script>
-var BlockSDK = require('blocksdk');
+var BlockSDK = require('blocksdk.js');
 if (window.self === window.top) {
 	document.body.innerText = 'This application is for use in the Salesforce Marketing Cloud Content Builder Editor only.';
 } else {
