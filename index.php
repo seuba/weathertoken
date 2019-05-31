@@ -2,6 +2,7 @@
   <head></head>
   <body>
     <script src="blocksdk.js"></script>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script> 
 	<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 <script>
 var BlockSDK = require('blocksdk');
