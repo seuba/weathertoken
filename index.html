@@ -18,7 +18,7 @@
 if (window.self === window.top) {
 	document.body.innerText = 'This application is for use in the Salesforce Marketing Cloud Content Builder Editor only.';
 } else {
-	var sdk = new BlockSDK();
+	var sdk = new SDK();
 	sdk.getContent(function (content) {
 		var quill = new Quill('#editor-container', {
 			theme: 'snow'
