@@ -1,7 +1,0 @@
-{
-    "name":"albert/albert",
-    "description":"asas",
-    "require": {
-        "twilio/sdk": "^5.32"
-    }
-}
