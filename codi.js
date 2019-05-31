@@ -1,3 +1,8 @@
+define([
+    'blocksdk'
+], function(
+    Postmonger
+) {
 if (window.self === window.top) {
 	document.body.innerText = 'This application is for use in the Salesforce Marketing Cloud Content Builder Editor only.';
 } else {
@@ -22,3 +27,4 @@ if (window.self === window.top) {
 		quill.on('text-change', saveText);
 	});
 }
+});
