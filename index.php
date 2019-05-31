@@ -9,11 +9,11 @@
 				var config = {
 					baseUrl: ''
 				};
-				var BlockSDK = [
+				var albert = [
 					'blocksdk',
 					'codi'
 				];
-				require(config, BlockSDK);
+				require(config, albert);
 			})();
 		</script>
 
