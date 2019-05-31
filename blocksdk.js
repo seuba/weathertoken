@@ -202,9 +202,9 @@ SDK.prototype._validateOrigin = function _validateOrigin (origin) {
 	return false;
 };
 
-if (typeof(window) === 'object') {
-	window.sfdc = window.sfdc || {};
-	window.sfdc.BlockSDK = SDK;
+if (typeof define === 'object') {
+	define.sfdc = define.sfdc || {};
+	define.sfdc.BlockSDK = SDK;
 }
 if (typeof(module) === 'object') {
 	module.exports = SDK;
