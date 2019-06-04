@@ -471,8 +471,8 @@ if (window.self === window.top) {
 			});
 		}
 		
-	});
-}
+	}
+
 		</script>
   </body>
 </html>
